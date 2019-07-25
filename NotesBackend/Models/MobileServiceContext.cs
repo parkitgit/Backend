@@ -26,7 +26,7 @@ namespace NotesBackend.Models
         {
         }
 
-        public DbSet<TodoItem> TodoItems { get; set; }
+        //public DbSet<TodoItem> TodoItems { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -35,6 +35,6 @@ namespace NotesBackend.Models
                     "ServiceTableColumn", (property, attributes) => attributes.Single().ColumnType.ToString()));
         }
 
-        public System.Data.Entity.DbSet<NotesBackend.DataObjects.Notes> Notes { get; set; }
+      //  public System.Data.Entity.DbSet<NotesBackend.DataObjects.Notes> Notes { get; set; }
     }
 }
